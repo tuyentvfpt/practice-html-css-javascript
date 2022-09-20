@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    padding:5px 30px;
+}
 .divider-text {
   position: relative;
   text-align: center;
@@ -27,4 +54,36 @@
 .btn-twitter {
   background-color: #42AEEC;
   color: #fff;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form div input{
+    flex: 1;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
 }
